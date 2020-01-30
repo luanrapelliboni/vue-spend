@@ -1,21 +1,16 @@
 <template>
-  <div class="main-container">
+  <div>
     <Header />
     <Brand />
     <Score />
     <ItemList />
   </div>
 </template>
-<style lang="scss">
-.main-container {
-  font-family: "Roboto", sans-serif;
-}
-</style>
 <script>
-import Header from "@/components/Header.vue";
-import Brand from "@/components/Brand.vue";
-import Score from "@/components/Score.vue";
-import ItemList from "@/components/ItemList.vue";
+import Header from "@/components/Header";
+import Brand from "@/components/Brand";
+import Score from "@/components/Score";
+import ItemList from "@/components/ItemList";
 
 export default {
   name: "home",

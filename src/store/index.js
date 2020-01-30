@@ -10,12 +10,4 @@ export default new Vuex.Store({
     items,
     score
   }
-  // state: {
-  // },
-  // mutations: {
-  // },
-  // actions: {
-  // },
-  // modules: {
-  // }
 })

@@ -5,8 +5,9 @@
 </template>
 
 <script>
-import Item from "@/components/Item.vue";
+import Item from "@/components/Item";
 import { mapState } from "vuex";
+import "./style.scss";
 
 export default {
   name: "ItemList",
@@ -21,15 +22,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.items {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 10px;
-}
-</style>

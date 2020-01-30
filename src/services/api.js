@@ -2,7 +2,6 @@ import axios from "axios";
 
 export default {
     getItems() {
-        // Mock API
         return axios.get("http://api.myjson.com/bins/glr0u");
     }
 }

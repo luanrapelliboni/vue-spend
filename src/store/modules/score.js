@@ -11,13 +11,11 @@ const getters = {}
 const actions = {
     sum({ commit }, item) {
         let current = state.total;
-        //let total = current + (item.price * ((item.quantity == 0) ? 1 : item.quantity));
         let total = current + item.price;
         commit('setTotal', total);
     },
     sub({ commit }, item) {
         let current = state.total;
-        // let total = current - (item.price * ((item.quantity == 0) ? 1 : item.quantity));
         let total = current - item.price;
         commit('setTotal', total);
     }
