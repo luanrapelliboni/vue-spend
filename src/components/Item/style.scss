@@ -90,3 +90,9 @@ $item-sell-button-disabled-bg-color: rgb(241, 242, 246);
     }
   }
 }
+
+@media (max-width: 600px) {
+  .item__sell__input {
+    max-width: 125px !important;
+  }
+}
