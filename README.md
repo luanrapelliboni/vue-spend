@@ -11,3 +11,5 @@ npm install
 npm run serve
 ```
 
+Screenshot:
+![Screenshot](https://github.com/lrapelliboni/vue-spend/blob/master/public/screenshot.png)
