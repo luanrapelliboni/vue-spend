@@ -58,6 +58,11 @@ export default {
           price: obj.price,
           quantity: this.quantity
         });
+
+        this.$store.dispatch("scoreboard/addItem", {
+          item: obj,
+          quantity: this.quantity
+        });
       }
     },
     sell(obj) {
@@ -65,6 +70,11 @@ export default {
         this.quantity = this.quantity - 1;
         this.$store.dispatch("score/sum", {
           price: obj.price,
+          quantity: this.quantity
+        });
+
+        this.$store.dispatch("scoreboard/removeItem", {
+          item: obj,
           quantity: this.quantity
         });
       }

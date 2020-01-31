@@ -1,0 +1,68 @@
+//
+// .scoreboard
+// --------------------------------------------------
+$scoreboard-bg-color: #FFF;
+//
+// .scoreboard__title
+// --------------------------------------------------
+$scoreboard-title-color: rgb(46, 204, 113);
+$scoreboard-title-bg-color: #FFF;
+
+.scoreboard {  
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: $scoreboard-bg-color;
+  font-size: 18px;
+  margin-top: 10px;
+  .scoreboard__title {
+    text-align: center;
+    background-color: $scoreboard-title-bg-color;
+    text-align: center;
+    font-size: 28px;
+    color: $scoreboard-title-color;
+    font-weight: bold;
+    padding: 15px;
+  }
+  .scoreboard__wrapper {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 0px;
+    .scoreboard__wrapper__item {
+      text-align: center;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+
+      .scoreboard__wrapper__item__image {
+        max-height: 50px;
+        max-width: 50px;
+        margin-right: 7px;
+        display: inline;
+      }
+
+      .scoreboard__wrapper__item__title {
+        font-size: 16px;
+        display: inline;
+      }
+
+      .scoreboard__wrapper__item__quantity {
+        font-size: 16px;
+        font-weight: bold;
+        display: inline;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .scoreboard__wrapper {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
