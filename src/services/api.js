@@ -2,6 +2,6 @@ import axios from "axios";
 
 export default {
     getItems() {
-        return axios.get("http://api.myjson.com/bins/glr0u");
+        return axios.get("http://myjson.dit.upm.es/api/bins/8g9n");
     }
 }
